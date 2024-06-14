@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: postgres_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Optional: Persistent data volume
+
+  mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongodb_user
+      MONGO_INITDB_ROOT_PASSWORD: mongodb_password
+    volumes:
+      - mongodb_data:/data/db # Optional: Persistent data volume
+
+  redis:
+    image: redis:latest
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80" # Map container port 80 to host port 80
+
+  backend:
+    build: ./backend/api
+    ports:
+      - "8000:8000" # Map container port 8000 to host port 8000
+    depends_on:
+      - postgres # Backend depends on PostgreSQL
+
+  # microservices:
+  #   build: ./microservices/python
+  #   ports:
+  #     - "5000:5000"  # Example port for your microservice
+  #   depends_on:
+  #     - postgres  # Microservice (optional) depends on PostgreSQL
+
+volumes:
+  postgres_data: # Optional: Persistent data volume for PostgreSQL
+  mongodb_data: # Optional: Persistent data volume for MongoDB

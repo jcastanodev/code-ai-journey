@@ -1,0 +1,110 @@
+### BACKEND API
+
+# Logs #
+/backend/api/logs
+/backend/api/*.log
+/backend/api/*.log*
+
+# Node files #
+/backend/api/node_modules/
+/backend/api/npm-debug.log
+/backend/api/yarn-error.log
+/backend/api/.env
+/backend/api/.npmrc
+
+# OS generated files #
+/backend/api/.DS_Store
+/backend/api/Thumbs.db
+
+# Typing #
+/backend/api/typings/
+
+# Dist #
+/backend/api/dist/
+
+# IDE #
+/backend/api/.idea/
+/backend/api/*.swp
+/backend/api/.awcache
+/backend/api/.c9/
+/backend/api/.project
+/backend/api/.classpath
+/backend/api/.settings/
+/backend/api/*.sublime-workspace
+
+# IDE - VSCode
+/backend/api/.vscode/*
+/backend/api/!.vscode/settings.json
+/backend/api/!.vscode/tasks.json
+/backend/api/!.vscode/launch.json
+/backend/api/!.vscode/extensions.json
+
+# Generated source-code #
+/backend/api/src/**/*.js.map
+/backend/api/coverage/
+
+### END BACKEND API
+
+### BACKEND MICROSERVICES AUTH
+
+# Logs #
+/backend/microservices/auth/logs
+/backend/microservices/auth/*.log
+/backend/microservices/auth/*.log*
+
+# Node files #
+/backend/microservices/auth/node_modules/
+/backend/microservices/auth/npm-debug.log
+/backend/microservices/auth/yarn-error.log
+/backend/microservices/auth/.env
+/backend/microservices/auth/.npmrc
+
+# OS generated files #
+/backend/microservices/auth/.DS_Store
+/backend/microservices/auth/Thumbs.db
+
+# Typing #
+/backend/microservices/auth/typings/
+
+# Dist #
+/backend/microservices/auth/dist/
+
+# IDE #
+/backend/microservices/auth/.idea/
+/backend/microservices/auth/*.swp
+/backend/microservices/auth/.awcache
+/backend/microservices/auth/.c9/
+/backend/microservices/auth/.project
+/backend/microservices/auth/.classpath
+/backend/microservices/auth/.settings/
+/backend/microservices/auth/*.sublime-workspace
+
+# IDE - VSCode
+/backend/microservices/auth/.vscode/*
+/backend/microservices/auth/!.vscode/settings.json
+/backend/microservices/auth/!.vscode/tasks.json
+/backend/microservices/auth/!.vscode/launch.json
+/backend/microservices/auth/!.vscode/extensions.json
+
+# Generated source-code #
+/backend/microservices/auth/src/**/*.js.map
+/backend/microservices/auth/coverage/
+
+### END BACKEND MICROSERVICES AUTH
+
+### FRONTEND
+
+# Dependency directories
+/backend/microservices/auth/backend/node_modules/
+
+# Optional npm cache directory
+/backend/microservices/auth/backend/.npm
+
+# dotenv environment variables file
+/backend/microservices/auth/backend/.env
+/backend/microservices/auth/backend/.env.test
+
+# Build output
+/backend/microservices/auth/backend/dist
+
+### END FRONTEND
